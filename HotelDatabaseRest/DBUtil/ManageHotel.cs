@@ -10,9 +10,9 @@ namespace HotelDatabaseRest.DBUtil
 {
     public class ManageHotel
     {
-        private const string ConnString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ThomasHotelDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        private const String GETALL = "Select * From Hotel";
-        private const String GETONE = "Select * From Hotel WHERE HotelID = @ID";
+        private const string ConnString = @"Data Source=thom-zealand-dbserver.database.windows.net;Initial Catalog=thom-zealand-db;User ID=thom20m1;Password=getReadLog65;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private const string GETALL = "Select * From Hotel";
+        private const string GETONE = "Select * From Hotel WHERE HotelID = @ID";
         private const string INSERT = "INSERT INTO Hotel VALUES (@ID, @Name, @Address, @PhoneNo, @Email)";
         private const string DELETE = "DELETE FROM Hotel WHERE HotelID = @ID";
         private const string UPDATE = "UPDATE Hotel " +
