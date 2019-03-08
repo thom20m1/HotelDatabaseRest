@@ -45,7 +45,7 @@ namespace HotelDatabaseRest.DBUtil
 
             facility.HotelNo = reader.GetInt32(0);
             facility.FacilityNo = reader.GetInt32(1);
-            facility.Type = reader.GetString(3);
+            facility.Type = reader.GetString(2);
 
             return facility;
         }
