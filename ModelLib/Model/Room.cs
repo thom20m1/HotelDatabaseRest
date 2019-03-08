@@ -11,14 +11,14 @@ namespace ModelLib.Model
 
         private int _roomNo;
         private int _hotelNo;
-        private int _kapacity;
-        private double _price;
+        private string _kapacity;
+        private int _price;
 
         public Room()
         {
         }
 
-        public Room(int roomNo, int hotelNo, int kapacity, double price)
+        public Room(int roomNo, int hotelNo, string kapacity, int price)
         {
             _roomNo = roomNo;
             _hotelNo = hotelNo;
@@ -38,13 +38,13 @@ namespace ModelLib.Model
             set => _hotelNo = value;
         }
 
-        public int Kapacity
+        public string Kapacity
         {
             get => _kapacity;
             set => _kapacity = value;
         }
 
-        public double Price
+        public int Price
         {
             get => _price;
             set => _price = value;

@@ -42,8 +42,8 @@ namespace HotelDatabaseRest.DBUtil
 
             room.RoomNo = reader.GetInt32(0);
             room.HotelNo = reader.GetInt32(1);
-            room.Kapacity = reader.GetInt16(2);
-            room.Price = reader.GetDouble(3);
+            room.Kapacity = reader.GetString(2);
+            room.Price = reader.GetInt32(3);
 
             return room;
         }
