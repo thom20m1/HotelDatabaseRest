@@ -9,7 +9,7 @@ namespace HotelDatabaseRest.DBUtil
 {
     public class ManageFacility
     {
-        private const string ConnString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private const string ConnString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ThomasHotelDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         private const String GETALL = "Select * From Facility";
         private const String GETONE = "Select * From Facility WHERE FacilityNo = @FacilityNo AND HotelNo = @HotelNo";
         private const string INSERT = "INSERT INTO Facility VALUES (@HotelNo, @FacilityNo, @Type)";
