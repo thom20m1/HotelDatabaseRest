@@ -44,8 +44,8 @@ namespace HotelDatabaseRest.DBUtil
             booking.RoomNo = reader.GetInt32(1);
             booking.HotelNo = reader.GetInt32(2);
             booking.GuestNo = reader.GetInt32(3);
-            booking.StartDate = reader.GetString(4);
-            booking.EndDate = reader.GetString(5);
+            booking.StartDate = reader.GetDateTime(4);
+            booking.EndDate = reader.GetDateTime(5);
 
             return booking;
         }

@@ -12,15 +12,15 @@ namespace ModelLib.Model
         private int _roomNo;
         private int _hotelNo;
         private int _guestNo;
-        private string _startDate;
-        private string _endDate;
+        private DateTime _startDate;
+        private DateTime _endDate;
 
         public Booking()
         {
 
         }
 
-        public Booking(int bookingNo, int roomNo, int hotelNo, int guestNo, string startDate, string endDate)
+        public Booking(int bookingNo, int roomNo, int hotelNo, int guestNo, DateTime startDate, DateTime endDate)
         {
             _bookingNo = bookingNo;
             _roomNo = roomNo;
@@ -54,13 +54,13 @@ namespace ModelLib.Model
             set => _guestNo = value;
         }
 
-        public string StartDate
+        public DateTime StartDate
         {
             get => _startDate;
             set => _startDate = value;
         }
 
-        public string EndDate
+        public DateTime EndDate
         {
             get => _endDate;
             set => _endDate = value;

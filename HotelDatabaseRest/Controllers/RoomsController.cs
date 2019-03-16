@@ -20,6 +20,7 @@ namespace HotelDatabaseRest.Controllers
         }
 
         // GET: api/Rooms/5
+        [Route ("api/Rooms/{idHotel}:int/{idRoom}:int")]
         public Room Get(int idHotel, int idRoom)
         {
             return manager.Get(idHotel, idRoom);
