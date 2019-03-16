@@ -32,12 +32,14 @@ namespace HotelDatabaseRest.Controllers
             return manager.Post(room);
         }
 
+        [Route("api/Rooms/{idHotel}:int/{idRoom}:int")]
         // PUT: api/Rooms/5
         public bool Put(int idHotel, int idRoom, [FromBody]Room room)
         {
             return manager.Put(idHotel,idRoom,room);
         }
 
+        [Route("api/Rooms/{idHotel}:int/{idRoom}:int")]
         // DELETE: api/Rooms/5
         public bool Delete(int idHotel, int idRoom)
         {
